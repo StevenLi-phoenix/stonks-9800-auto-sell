@@ -74,6 +74,20 @@ A pixel-brightness probe at the first row's icon position serves as a
 - This is a one-shot tool — written for a single afternoon's task. Use the
   scaffolding as a reference, not a production library.
 
+## ⚠️ Don't run this blind
+
+This script was written and tested on **one specific machine** (the one
+described above). Coordinates, DPI assumptions, monitor offset, click hold
+time — all hard-coded. **There is no warranty, and a wrong click in this
+game cannot be undone** (the in-game confirm dialog literally tells you
+"this transaction cannot be reversed").
+
+**Recommended workflow:** drop the whole script into your favorite coding AI
+(Claude, GPT, Cursor, etc.) along with a screenshot of your own game window,
+and ask it to re-derive the coordinates and offsets for *your* setup before
+running anything live. Treat this repo as a reference implementation of the
+*technique*, not a turnkey tool.
+
 ## License
 
 MIT — do whatever you want.
